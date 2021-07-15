@@ -1,6 +1,6 @@
 # Manga-Checker
 
-###Um programa em Python que checa o site https://mangalivre.net/ para ver se tem novos capitulos disponiveis dos seus mangas favoritos!
+### Um programa em Python que checa o site https://mangalivre.net/ para ver se tem novos capitulos disponiveis dos seus mangas favoritos!
 
 Para usar ele é bem simples, primeiro baixe o instalador em https://github.com/Maulem/Manga-Checker/raw/main/installer/exe/Manga%20Checker%20Installer.exe, se o antivirus reclamar adicione o arquivo a excessão, como o código do programa é aberto qualquer um pode ver que não há nenhum virus de fato.
 
