@@ -3,11 +3,14 @@ from functools import partial
 import win32api
 from urllib.request import Request, urlopen
 import json
+import os
 
 ###| Global |###
 item_clicked  = ""
-data_file = "data.json"
-settings_file = "settings.json"
+home_dir  = os.path.expanduser("~")
+final_dir = home_dir + "/AppData/Roaming/Manga Checker"
+data_file = final_dir + "/data.json"
+settings_file = final_dir + "/settings.json"
 new_user = False
 double_click_preventer = False
 
@@ -84,7 +87,7 @@ except:
     ##| Se não existe cria ele e coloca as configurações padrão |##
     default_settings = {
     "colour_theme"                  : "light",
-    "version"                       : "beta"
+    "version"                       : "beta - 0.1"
     }
     settings = default_settings
     json_object = json.dumps(settings, indent = 4)
