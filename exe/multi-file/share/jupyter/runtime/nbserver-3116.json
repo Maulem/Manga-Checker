@@ -1,0 +1,12 @@
+{
+  "base_url": "/",
+  "hostname": "localhost",
+  "notebook_dir": "C:\\Users\\Maulem\\Downloads\\robot20-master\\robot20-master",
+  "password": false,
+  "pid": 3116,
+  "port": 8888,
+  "secure": false,
+  "sock": "",
+  "token": "d25f012a5dee966255d585aebeb19916787464f688c7c9ab",
+  "url": "http://localhost:8888/"
+}

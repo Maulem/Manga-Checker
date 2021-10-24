@@ -18,7 +18,7 @@ temp_dir  = home_dir + "/AppData/Roaming/temp-manga-checker"
 final_dir = home_dir + "/AppData/Roaming/Manga Checker"
 zipped = temp_dir + "/Manga Checker.zip"
 multi_file_folder = temp_dir + "/Manga-Checker-main/exe/multi-file"
-exe_file = final_dir + "/Manga Checker.exe"
+exe_file = final_dir + "/VisualMangaChecker.exe"
 desktop = str(Path(winshell.desktop()))
 shortcut_file = desktop + "/Manga Checker.lnk"
 

@@ -29,6 +29,10 @@ home_dir  = os.path.expanduser("~")
 final_dir = home_dir + "/AppData/Roaming/Manga Checker"
 data_file = final_dir + "/data.json"
 settings_file = final_dir + "/settings.json"
+screenshot_folder = final_dir + "/temp"
+screenshot_file = final_dir + "/temp/temp_screenshot.png"
+fullscreen_file = final_dir + "/barra_fullscreen.png"
+pesquisa_file = final_dir + "/barra_pesquisa.png"
 new_user = False
 double_click_preventer = False
 
@@ -251,7 +255,7 @@ def check_negative(num):
 ###| Tira um screenshot e salva na pasta temp
 def take_screenshot(x = 0, y = 0, width = 1980, height = 1080):
     Screenshot = pyautogui.screenshot(region = (x, y, width, height))
-    file = "temp/temp_screenshot.png"
+    file = screenshot_file
     Screenshot.save(file)
 
 ###| Calcula centros, desenha caixas e faz a homografia
@@ -535,19 +539,19 @@ def start_browser():
 
     ###| Cria um diretorio se precisar
     try:
-        os.mkdir(path)
+        os.mkdir(screenshot_folder)
     except OSError:
-        print ("Creation of the directory %s failed" % path)
+        print ("Creation of the directory %s failed" % screenshot_folder)
     else:
-        print ("Successfully created the directory %s " % path)
+        print ("Successfully created the directory %s " % screenshot_folder)
 
     ###| Carrega a imagem da barra de pesquisa
-    img_pesquisa = cv2.imread('barra_pesquisa.png')
+    img_pesquisa = cv2.imread(pesquisa_file)
 
     ###| Procura no screenshot a barra de pesquisa
     while (x_centro <= 1 and y_centro <= 1):
         take_screenshot()
-        img_screenshot = cv2.imread("temp\\temp_screenshot.png")
+        img_screenshot = cv2.imread(screenshot_file)
         pyautogui.sleep(0.1)
         check_screenshot(img_pesquisa, img_screenshot)
         if x_centro <= 1 and y_centro <= 1:
@@ -564,8 +568,8 @@ def start_browser():
     y_centro_backup = y_centro
 
     ###| Carrega a imagem da barra de pesquisa e do screenshot
-    img_pesquisa = cv2.imread('barra_fullscreen.png')
-    img_screenshot = cv2.imread("temp\\temp_screenshot.png")
+    img_pesquisa = cv2.imread(fullscreen_file)
+    img_screenshot = cv2.imread(screenshot_file)
 
     mult_pesquisa = 3
     pesquisa_resized = cv2.resize(img_pesquisa, (mult_pesquisa*img_pesquisa.shape[1], mult_pesquisa*img_pesquisa.shape[0]), interpolation = cv2.INTER_AREA)
@@ -594,13 +598,13 @@ def start_browser():
         pyautogui.sleep(1)
 
         ###| Carrega a imagem da barra de pesquisa
-        img_pesquisa = cv2.imread('barra_pesquisa.png')
+        img_pesquisa = cv2.imread(pesquisa_file)
 
         ###| Procura no screenshot a barra de pesquisa
         while (x_centro <= 1 and y_centro <= 1):
             take_screenshot()
             pyautogui.sleep(0.1)
-            img_screenshot = cv2.imread("temp\\temp_screenshot.png")
+            img_screenshot = cv2.imread(screenshot_file)
             
             check_screenshot(img_pesquisa, img_screenshot)
 

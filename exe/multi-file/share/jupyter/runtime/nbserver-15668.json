@@ -1,0 +1,12 @@
+{
+  "base_url": "/",
+  "hostname": "localhost",
+  "notebook_dir": "D:\\INSPER-FILES\\Facul\\6S\\Megadados",
+  "password": false,
+  "pid": 15668,
+  "port": 8888,
+  "secure": false,
+  "sock": "",
+  "token": "b3497c6d630242cce6b7698140768dbdb6b6d820701b752f",
+  "url": "http://localhost:8888/"
+}
