@@ -6,7 +6,7 @@
 
 #### Tutorial em portugues
 
-Para usar ele é bem simples, primeiro baixe o instalador em https://github.com/Maulem/Manga-Checker/raw/main/installer/exe/Manga%20Checker%20Installer.exe, se o antivirus reclamar adicione o arquivo a excessão, como o código do programa é aberto qualquer um pode ver que não há nenhum virus de fato.
+Para usar ele é bem simples, primeiro baixe o instalador em https://github.com/Maulem/Manga-Checker/blob/main/installer/Manga%20Checker%20Installer.exe, se o antivirus reclamar adicione o arquivo a excessão, como o código do programa é aberto qualquer um pode ver que não há nenhum virus de fato.
 
 Depois de baixar execute-o e no fim ele deve criar um atalho na sua Área de trabalho e mostrar uma mensagem de sucesso.
 
@@ -20,7 +20,7 @@ Obs: Deixei alguns links de exemplo no programa, então se não quiser atualiza�
 
 #### English tutorial
 
-To use it is quite simple, first download the installer at https://github.com/Maulem/Manga-Checker/raw/main/installer/exe/Manga%20Checker%20Installer.exe, and if you receive an antivirus warning please add the installer to exception list. This is an open source program, so anyone can see that there's no virus at all.
+To use it is quite simple, first download the installer at https://github.com/Maulem/Manga-Checker/blob/main/installer/Manga%20Checker%20Installer.exe, and if you receive an antivirus warning please add the installer to exception list. This is an open source program, so anyone can see that there's no virus at all.
 
 After downloading the installer click twice in it and it should create a shorcut in your desktop and show a sucess message.
 
