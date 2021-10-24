@@ -1,4 +1,4 @@
-# Manga Checker
+# Manga Checker v 0.2
 
 ### Um programa em Python que checa o site https://mangalivre.net/ para ver se tem novos capitulos disponiveis dos seus mangas favoritos!
 
@@ -16,6 +16,8 @@ Após isso é só abrir o atalho, adicionar os links das paginas dos seus mangas
 
 Obs: Deixei alguns links de exemplo no programa, então se não quiser atualizações sobre eles é só deleta-los.
 
+###### Importante 2: não mexa o mouse enquanto o programa adiciona um novo capitulo ou atualiza os capitulos existentes.
+
 #### English tutorial
 
 To use it is quite simple, first download the installer at https://github.com/Maulem/Manga-Checker/raw/main/installer/exe/Manga%20Checker%20Installer.exe, and if you receive an antivirus warning please add the installer to exception list. This is an open source program, so anyone can see that there's no virus at all.
@@ -28,3 +30,4 @@ Then you only need to double click the shortcut, add the links from the pages of
 
 Ps: I put some links as example in the program, and if you don't want to search for new chapters of this mangas feel free to delete them.
 
+###### Important2: don't move the mouse when the program is adding a new manga or searching for new updates.
