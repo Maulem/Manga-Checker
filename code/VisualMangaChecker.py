@@ -15,6 +15,7 @@ import subprocess
 import os
 import time
 import pyperclip
+import maulemEssencials as me
 
 ###| VARIÁVEIS GLOBAIS |###
 
@@ -340,6 +341,7 @@ def drawBoxes_doHomografy_calcCenter(kp1, kp2, img_pesquisa, img_screenshot, goo
 
     # Desenha um contorno em vermelho ao redor de onde o objeto foi encontrado
     img2b = cv2.polylines(out,[np.int32(dst)],True,(255,255,0),5, cv2.LINE_AA)
+    # me.draw_box_on_screen(x_region, y_region, width_region, height_region)
     
     return img2b
 
@@ -422,17 +424,18 @@ def check_screenshot(img_pesquisa, img_screenshot, print_type = "", precision = 
 ###| Faz o download do HTML da pagina em questão e procura informações
 def cap_number_search(link):
 
+    link_source = "view-source:" + link
     ###| Move o cursor para a barra de pesquisa e digita um site
     pyautogui.moveTo(x_centro, y_centro, duration=0, tween=pyautogui.easeInOutQuad)
     pyautogui.click()
-    pyautogui.write(link, interval=0)
+    pyautogui.write(link_source, interval=0)
     pyautogui.typewrite(["Enter"])
 
-    pyautogui.sleep(1)
+    pyautogui.sleep(2)
 
-    ###| Acessa o html da pagina
-    with pyautogui.hold("Ctrl"):
-        pyautogui.press("u")
+    # ###| Acessa o html da pagina
+    # with pyautogui.hold("Ctrl"):
+    #     pyautogui.press("u")
 
     ###| Baixa o HTML da página acessada
     with pyautogui.hold("Ctrl"):
@@ -444,7 +447,8 @@ def cap_number_search(link):
     webpage = pyperclip.paste()
     
     ###| Checa se o resultado foi vazio |###
-    if webpage == "":
+    find_webpage = webpage.find("Hum… Não consigo chegar a esta página")
+    if find_webpage != -1:
         return -1, "o link esta errado ou o site fora do ar!"
 
     ###| Checa se encontrou o número do capitulo |###
@@ -566,6 +570,8 @@ def start_browser():
     y_region_backup = y_region
     x_centro_backup = x_centro
     y_centro_backup = y_centro
+    width_backup    = width_region
+    height_backup   = height_region
 
     ###| Carrega a imagem da barra de pesquisa e do screenshot
     img_pesquisa = cv2.imread(fullscreen_file)
