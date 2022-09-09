@@ -4,7 +4,7 @@
 
 ### A Python program that checks the site https://mangalivre.net/ in search of new chapters of your favorite mangas! (scroll down for english tutorial)
 
-#### Tutorial em portugues
+#### Tutorial em português
 
 Para usar ele é bem simples, primeiro baixe o instalador em https://github.com/Maulem/Manga-Checker/raw/main/installer/Manga%20Checker%20Installer.exe, se o antivirus reclamar adicione o arquivo a excessão, como o código do programa é aberto qualquer um pode ver que não há nenhum virus de fato.
 
@@ -22,12 +22,12 @@ Obs: Deixei alguns links de exemplo no programa, então se não quiser atualiza�
 
 To use it is quite simple, first download the installer at https://github.com/Maulem/Manga-Checker/raw/main/installer/Manga%20Checker%20Installer.exe, and if you receive an antivirus warning please add the installer to exception list. This is an open source program, so anyone can see that there's no virus at all.
 
-After downloading the installer click twice in it and it should create a shorcut in your desktop and show a sucess message.
+After downloading the installer click twice in it and it should create a shorcut in your desktop and show a success message.
 
 Then you only need to double click the shortcut, add the links from the pages of your favorite mangas and click the button "refresh" to see if there's new chapters.
 
-###### Important: this links need to be an adress that contain all chapters of the manga released, like https://mangalivre.net/manga/boruto-naruto-next-generations/3637 that contains all chapters released from this manga.
+###### Important: this links need to be an address that contain all chapters of the manga released, like https://mangalivre.net/manga/boruto-naruto-next-generations/3637 that contains all chapters released from this manga.
 
-Ps: I put some links as example in the program, and if you don't want to search for new chapters of this mangas feel free to delete them.
+Ps: I put some links as examples in the program, and if you don't want to search for new chapters of this mangas feel free to delete them.
 
 ###### Important2: don't move the mouse when the program is adding a new manga or searching for new updates.
